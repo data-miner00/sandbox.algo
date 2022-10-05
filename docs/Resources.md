@@ -1,0 +1,5 @@
+- [Algorand Website](https://www.algorand.com/)
+- [Algorand Official Youtube Channel](https://www.youtube.com/c/Algorand)
+- [Algorand Blockchain Core Protocol Overview](https://www.youtube.com/watch?v=gACVKaNqxPs)
+- [Algorand Developer Portal](https://developer.algorand.org/)
+- [Algorand Official Github Group](https://github.com/algorand)

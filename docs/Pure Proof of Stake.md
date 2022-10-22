@@ -1,4 +1,5 @@
 - [Link](https://www.algorand.com/technology/pure-proof-of-stake)
+- [Other](https://www.algorand.com/resources/blog/proof-of-stake-vs-pure-proof-of-stake-consensus)
 
 ---
 

@@ -3,3 +3,7 @@
 - [Algorand Blockchain Core Protocol Overview](https://www.youtube.com/watch?v=gACVKaNqxPs)
 - [Algorand Developer Portal](https://developer.algorand.org/)
 - [Algorand Official Github Group](https://github.com/algorand)
+- [Algorand Forum](https://forum.algorand.org/)
+- [Algoexplorer](https://algoexplorer.io/)
+- [Docker Docs](https://docs.docker.com/)
+- [Algorand Testnet Faucet](https://bank.testnet.algorand.network/)

@@ -19,6 +19,16 @@
 - An application can call another application.
 - Application have an **associated application account** that can hold Algos and ASA
 - To provide a standard method for exposing an API and encoding/decoding data types from application call transactions, the [ABI](https://developer.algorand.org/docs/get-details/dapps/smart-contracts/ABI/) should be used.
+- Application call transactions:
+  - NoOp - Generic application calls to execute the ApprovalProgram
+  - OptIn - Accounts use this transactions to begin participating in a smart contract. Participation enables local usage.
+  - DeleteApplication - Transaction to delete the application
+  - UpdateApplication - Transaction to update TEAL programs for a contract
+  - CloseOut - Accounts use this transaction to close out thier participation in the contract. This call can fail based on the TEAL logic, preventing the account from removing the contract from its balance record.
+  - ClearState - Similar to CloseOut, but the transaction will always clear a contract from the account's balance record whether the program succeeds or fails.
+- Smart contracts implemented in
+  - clear state program - handles the 'ClearState' application call transaction
+  - approval program - handles the rest of the application call transactions.
 
 ## Smart signatures
 

@@ -1,0 +1,32 @@
+
+
+txn Fee                 // Always limit to make sure someone isn't throwing away your money
+int 10000
+<=
+
+txn CloseRemainderTo    // Check that CloseRemainderTo is zero to again
+global ZeroAddress      // Check that there isn't an undesired exit for money
+==
+&&
+
+txn Receiver            // Check that the Receiver is who we want to send money to
+addr ABCDEFG
+==
+&&
+
+txn Lease               // Check that the Lease is set to limit replay rate
+byte abcdefg
+==
+&&
+
+txn LastValid           // Check that the Least will be valid for at least 999 rounds
+txn FirstValid
+-
+int 999
+>=
+&&
+
+txn Amount              // Check that the Amount is less than 5 Algos (5,000,000 µAlgos)
+int 5000000
+<=
+&&

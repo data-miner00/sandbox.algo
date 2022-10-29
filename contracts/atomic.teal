@@ -1,0 +1,20 @@
+// Txn[0].Amount * A == Txn[1].Amount * B
+// Checking the ratio is equal
+
+gtxn 0 Amount               // Multiply transaction 0's Amount by part of ratio
+int 1311693406324658740     // Move aside the low half
+mulw
+store 2
+
+gtxn 1 Amount               // Multiply transaction 1's Amount by the other part of the ratio
+int 14627357396862417851    // Move aside the low half
+mulw
+store 4
+
+==                          // The high halves have been left on the stack
+
+load 2                      // Bring back the low halves. Compare them
+load 4
+==
+
+&&                          // Check the expression is equal

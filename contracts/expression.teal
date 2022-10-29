@@ -1,0 +1,22 @@
+// Simulate (int(arg[0]) == 0) or ((9999999 / int(arg[0])) > 500)
+
+int 9999999         // Load Arg[0], convert to int, and see if it's greater than zero
+arg 0
+btoi
+dup
+int 0
+>
+bnz ok
+
+pop                 // If Arg[0] was zero, throw away the extra copy of int(Arg[0])
+int 1               // and leave 99999999 on the stack as a non-zero int which can be used as 'true'. Jump to the end.
+bnz done            
+
+ok:
+/                   // int(Arg[0]) was not zero.
+500                 // This leaves the stack with ((99999999 / int(Arg[0])) > 500) as a value of 0 or 1 
+>
+
+done:
+// other code here
+// a non-zero int is left on the stack if the expression is true

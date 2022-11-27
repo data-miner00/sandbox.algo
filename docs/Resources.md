@@ -11,6 +11,9 @@
 - [Algorand Testnet Faucet](https://bank.testnet.algorand.network/)
 - [MyAlgo Wallet](https://wallet.myalgo.com/access)
 - [PyTeal Course Github](https://github.com/algorand-devrel/pyteal-course)
+- [Algorand Blog](https://developer.algorand.org/blog/)
+- [Algorand Bounty](https://gitcoin.co/algorandfoundation/bounties)
+- [Algorand Tutorials](https://developer.algorand.org/tutorials/)
 
 ## Topics
 
